@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glossary xmlns="http://www.ibm.com/is/bg/importexport"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.ibm.com/is/bg/importexport BGSchema.xsd"
+    version="1.6" exportTime="1535682514992" ignoreAssignedAssets="true"
+    ignoreLabeledAssets="true" ignoreAssetCollections="true" ignoreStewards="true">
+    <categories>
+        <category
+            rid="6662c0f2.ee6a64fe.qir6b1i7d.2dm00g9.vbq60u.kg14ac4uajbrtnsj11fhj"
+            name="Crown Jewels" shortDescription="All data that is sensitive customer info per regulatory obligations"/>
+        <category
+            rid="6662c0f2.ee6a64fe.8dbmamn82.g575q50.kunbuf.rf9ii0ed26t5n2lb3bupo"
+            name="Mortgage_category" shortDescription="Mortgage details "/>
+        <category
+            rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f"
+            name="mortgage_customer" shortDescription="Customer financial details">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamn82.g575q50.kunbuf.rf9ii0ed26t5n2lb3bupo" identity="Mortgage_category"/>
+        </category>
+        <category
+            rid="6662c0f2.ee6a64fe.8dbmamnav.ef978ja.igl423.lckp9vda4f84i5c9qb76d"
+            name="mortgage_default" shortDescription="Final status of a mortgage">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamn82.g575q50.kunbuf.rf9ii0ed26t5n2lb3bupo" identity="Mortgage_category"/>
+        </category>
+        <category
+            rid="6662c0f2.ee6a64fe.8dbmamncm.smav6of.15uinu.m31o4mmgts7022vd31e2k"
+            name="mortgage_property" shortDescription="Basic information about individual property">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamn82.g575q50.kunbuf.rf9ii0ed26t5n2lb3bupo" identity="Mortgage_category"/>
+        </category>
+    </categories>
+    <terms>
+        <term
+            rid="6662c0f2.e1b1ec6c.qir6b1i7u.binfbdg.egtivh.p46rknraghgst9o1umnoc"
+            name="Sensitive Personal Data"
+            shortDescription="Any data deemed to be sensitive personal info for a customer"
+            status="ACCEPTED" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.qir6b1i7d.2dm00g9.vbq60u.kg14ac4uajbrtnsj11fhj" identity="Crown Jewels"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnrd.ko7q6eu.rjqicg.2lg1jjjtu0roe9fnllpk3"
+            name="appliedonline"
+            shortDescription="Binary column represents if application for mortgage submitted online"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnvb.e41a2qs.1l4q96.8ofbbibp2tgvtn8g9vk5r"
+            name="carddebt" shortDescription="Total credit card debt "
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamo00.8im1ips.2ej1h4.gnd0rlru5b3eedcbjmrl8"
+            name="currentloans"
+            shortDescription="Number of current loans"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.qir6b1ofd.hs49352.7jpbit.dtpgel28tpn2im539rn6p"
+            name="Customer-Mortgagor"
+            shortDescription="The mortgagor is the person who takes on the mortgage on their property"
+            status="ACCEPTED" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnko.q88di3r.lm4ff8.1oq7hnsj6uasadncjre1v"
+            name="id"
+            shortDescription="A unique number to identify individual mortgage"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnqr.1frt7gm.9h4ja6.6v6pvep40idkrhrflsekh"
+            name="income" shortDescription="Customer’s yearly income "
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamo0k.eab20hk.0iunlk.jc3dddp67iilndlj089pa"
+            name="loanamount" shortDescription="Current loan amount"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnuh.s1lj44g.io4agb.3918bmqbgb6bf2v0q7upp"
+            name="noofcards"
+            shortDescription="Number of credit cards customer has"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnrv.qd5jttg.lkrsv8.h662qle11125e3p4mpscv"
+            name="residence" shortDescription="Current residency status"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnt7.kjff57n.qc6ndo.tnc2nua754kvkk1upopo2"
+            name="yrscurrentadd"
+            shortDescription="Number of years staying at current address"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamntu.brkh81c.l1n19l.0ikgo28emm5pksqfth751"
+            name="yrscurrentemp"
+            shortDescription="Current employment tenure"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnle.jh6r8rj.jiimtq.l9fr4rvqc7djbgm8j3rt8"
+            name="id"
+            shortDescription="A unique number to identify individual mortgage"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnav.ef978ja.igl423.lckp9vda4f84i5c9qb76d" identity="Mortgage_category::mortgage_default"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnoa.o9hhesh.ecrvin.ts4uvv28jrmlijk7c2o97"
+            name="mortgagedefault"
+            shortDescription="Binary column represents if mortgage recovered "
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnav.ef978ja.igl423.lckp9vda4f84i5c9qb76d" identity="Mortgage_category::mortgage_default"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnn3.b09f7cf.oc6uf6.1fgk6gho2gq4eh2q44oh1"
+            name="id"
+            shortDescription="A unique number to identify individual mortgage"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamncm.smav6of.15uinu.m31o4mmgts7022vd31e2k" identity="Mortgage_category::mortgage_property"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnq1.r82sgvi.rlei04.9pbfmt4c2vcjvai9v8cfi"
+            name="location"
+            shortDescription="Three-digit numeric location code where property located"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamncm.smav6of.15uinu.m31o4mmgts7022vd31e2k" identity="Mortgage_category::mortgage_property"/>
+        </term>
+        <term
+            rid="6662c0f2.e1b1ec6c.8dbmamnp9.8q364lb.d83nql.53e1p79b7senmo6ikmg0c"
+            name="saleprice"
+            shortDescription="Sale price of the property"
+            status="CANDIDATE" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamncm.smav6of.15uinu.m31o4mmgts7022vd31e2k" identity="Mortgage_category::mortgage_property"/>
+        </term>
+    </terms>
+    <policies>
+        <policy
+            rid="6662c0f2.8ed29152.qir6b1i8t.l88d414.grd1i8.0r5vc11m2beoa7ljkquc6"
+            name="Protection of  sensitive data" shortDescription="Ensure customer privacy by protecting sensitive data">
+            <referencedRules>
+                <ruleRef
+                    rid="6662c0f2.e1b13efc.qir6b1iaf.beafisc.s56jbo.dekut9m2eva89hlvi44r2" identity="Any derived sensitive data (name + tel number + age + gender) must be encrypted if customer id is not tokenized"/>
+                <ruleRef
+                    rid="6662c0f2.e1b13efc.qir6b1ii4.4u0qi7i.t27uu3.o12nq8c1hm55q9h6b7qvf" identity="Client ID/SSN must be masked"/>
+                <ruleRef
+                    rid="6662c0f2.e1b13efc.qir6b1i9b.e8cu9gt.fjqa1p.0po1ch17dp3e09cfdtqjg" identity="Credit Card data must be masked"/>
+            </referencedRules>
+        </policy>
+    </policies>
+    <rules>
+        <rule
+            rid="6662c0f2.e1b13efc.qir6b1iaf.beafisc.s56jbo.dekut9m2eva89hlvi44r2" name="Any derived sensitive data (name + tel number + age + gender) must be encrypted if customer id is not tokenized">
+            <referencedByPolicies>
+                <policyRef
+                    rid="6662c0f2.8ed29152.qir6b1i8t.l88d414.grd1i8.0r5vc11m2beoa7ljkquc6" identity="Protection of  sensitive data"/>
+            </referencedByPolicies>
+        </rule>
+        <rule
+            rid="6662c0f2.e1b13efc.qir6b1ii4.4u0qi7i.t27uu3.o12nq8c1hm55q9h6b7qvf" name="Client ID/SSN must be masked">
+            <referencedByPolicies>
+                <policyRef
+                    rid="6662c0f2.8ed29152.qir6b1i8t.l88d414.grd1i8.0r5vc11m2beoa7ljkquc6" identity="Protection of  sensitive data"/>
+            </referencedByPolicies>
+        </rule>
+        <rule
+            rid="6662c0f2.e1b13efc.qir6b1i9b.e8cu9gt.fjqa1p.0po1ch17dp3e09cfdtqjg" name="Credit Card data must be masked">
+            <referencedByPolicies>
+                <policyRef
+                    rid="6662c0f2.8ed29152.qir6b1i8t.l88d414.grd1i8.0r5vc11m2beoa7ljkquc6" identity="Protection of  sensitive data"/>
+            </referencedByPolicies>
+        </rule>
+    </rules>
+</glossary>
